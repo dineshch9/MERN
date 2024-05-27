@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script>function studentform(event){
+    event.preventDefault();
+    console.log("hi");
+    // Perform login validation and redirection
+    // For simplicity, let's assume successful login redirects to a dashboard
+    window.location.href=('./student.html');
+
+  }</script>
+</head>
+<body>
+  <header>
+    <h1>Student Management System</h1>
+  </header>
+  <section id="login">
+    <h2>Student Login</h2>
+    <form id="studentLoginForm" onsubmit="studentform">
+      <label for="studentUsername">regnumber:</label>
+      <input type="text" id="studentUsername" required>
+      <label for="studentPassword">Password:</label>
+      <input type="password" id="studentPassword" required>
+      <button type="submit">Login</button>
+    </form>
+  </section>
+  <section id="facultyLogin">
+    <h2>Faculty Login</h2>
+    <form id="facultyLoginForm">
+      <label for="facultyUsername">regnumber:</label>
+      <input type="text" id="facultyUsername" required>
+      <label for="facultyPassword">Password:</label>
+      <input type="password" id="facultyPassword" required>
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+ 
+</body>
+</html>

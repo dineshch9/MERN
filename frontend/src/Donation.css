@@ -1,0 +1,175 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/sort-az.css');
+
+body{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FCF7F8;
+    min-height: 100vh;
+}
+
+#root{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+#root > footer{
+    padding: 10px;
+    justify-self: end;
+    text-align: center;
+    background-color: #263e2c;
+    margin-top:auto;
+    color:#FCF7F8;
+}
+
+#root > footer > p{
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#root > footer > p > img{
+    height: 25px;
+    filter: invert();
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    background-color: #053225;
+    color: #FCF7F8;
+    margin: 0;
+    padding: 1%;
+}
+
+
+#title > h1,h3{
+    width: 100%;
+    margin: 1%;
+}
+
+
+#nitlogo{
+    height: 70px;
+}
+
+#theory>img{
+    height: 40vw;
+}
+
+#theory>div>h4{
+    font-weight: 500;
+}
+
+#theory{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 5%;
+    padding-right: 1%;
+}
+
+
+#cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 2%;
+    background-color: #d5fcdf;
+}
+
+#card{
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.316);
+    padding: 5% 10%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#card > h2{
+    color:#053225;
+}
+
+@media screen and (max-width:980px){
+    
+    #title > h1{
+        font-size: 22px;
+    }
+    #cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+        padding: 5%;
+        background-color: #d5fcdf;
+    }
+
+    #navbar{
+        margin: 0px;
+    }
+    #theory > div{
+        padding: 5% 10%;
+    }
+}
+
+
+#paymentmodesbtns{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: fit-content;
+}
+
+#paymentmodesbtns > button{
+    height: 35px;
+    border-radius: 3px;
+    background-color: #FCF7F8;
+    border: none;
+    box-shadow: 0px 0px 5px 1px #0fa47a;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#paymentmodesbtns > button:hover{
+    background-color: #063120;
+    border: none;
+    box-shadow: 0px 0px 5px 1px #0fa47a;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FCF7F8;
+}
+@media screen and (max-width:980px) {
+    #theory{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        padding: 0px;
+    }
+    #theory>img{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: auto;
+    }
+    nav{
+        padding: 0px;
+        margin: 0px;
+    }
+    body{
+        padding-top: 0px;
+    }
+}

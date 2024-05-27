@@ -1,0 +1,13 @@
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+}
+@media only screen and (max-width: 1000px){
+    canvas{
+        left: -5%;
+        transform: scale(0.7);
+    }
+}

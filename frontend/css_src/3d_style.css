@@ -1,0 +1,72 @@
+
+
+canvas{
+  position: fixed;
+  left: 0;
+  top:0;
+  z-index: -1;
+}
+
+#loading_page{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width:100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.progress-bar{
+  width: 60%;
+  height: 10px;
+  background-color: rgb(0, 46, 74);
+  border-radius: 30px;
+  border: 2px solid white;
+}
+
+#progress-data{
+  width: 0px;
+  height: 100%;
+  border-radius: 30px;
+  background-color: aqua;
+}
+
+#redirection{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: large;
+  height: 40px;
+  width: 100px;
+  border-radius: 20px 5px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+  background-color:transparent;
+  border: 1px solid yellow ;
+  border-style: double;
+  transition: transform .2s;
+}
+
+#redirection:hover{
+  color: black;
+  background-color: rgb(255, 217, 0);
+  transform: scale(1.1);
+}
+
+#redirection:active{
+  color: black;
+  background-color: rgb(255, 217, 0);
+  transform: scale(0.9);
+}

@@ -1,0 +1,110 @@
+h1{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 5%;
+    gap: 5px;
+    padding: 0px;
+}
+
+@media screen and (max-width:900px) {
+    form{
+        width: 90%;
+    }
+}
+
+form > input{
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid;
+    height: 2em;
+}
+
+form > input:focus{
+    all:unset;
+    border: none;
+    border-bottom: 2px solid #2CA58D;
+
+}
+
+#Postbtn{
+    cursor: pointer;
+    font-size: larger;
+    width: min-content;
+    border: 2px solid #2CA58D;
+    border-radius: 5px;
+    padding: 4px 20px;
+}
+
+textarea{
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+textarea:focus{
+    all: unset;
+    border: 2px solid #2CA58D;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+form input:nth-child(2){
+    height: 4em;
+}
+
+#newbtn{
+    cursor: pointer;
+    margin-left: 5%;
+    border: 2px solid;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px 10px;
+}
+
+#sortbybtn{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+}
+
+#sortby{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+#sortby > ul{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    list-style: none;
+    border-radius: 10px;
+    margin: 1%;
+}
+
+#sortby > ul > li > button{
+    all: unset;
+}
+
+#sortby > ul > li:hover{
+    background-color: rgb(255, 236, 212);
+}
+
+#sortby > ul > li:nth-child(1){
+    border-bottom: 1px dotted;
+}
+
+#sortby > ul{
+    padding: 5px 12px;
+    text-align: center;
+    border: 2px solid;
+    width: fit-content;
+}
+

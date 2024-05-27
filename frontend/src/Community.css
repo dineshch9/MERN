@@ -1,0 +1,229 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/sort-az.css');
+
+body{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FCF7F8;
+    min-height: 100vh;
+}
+
+#root{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+#root > footer{
+    padding: 10px;
+    justify-self: end;
+    text-align: center;
+    background-color: #263e2c;
+    margin-top:auto;
+    color:#FCF7F8;
+}
+
+#root > footer > p{
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#root > footer > p > img{
+    height: 25px;
+    filter: invert();
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    background-color: #053225;
+    color: #FCF7F8;
+    margin: 0;
+    padding: 1%;
+}
+
+#title > h1,h3{
+    width: 100%;
+    margin: 1%;
+}
+
+@media screen and (max-width:980px){
+    nav{
+        flex-direction: column;
+        margin-bottom: 12%;
+    }
+    #title > h1{
+        font-size: 22px;
+    }
+}
+
+#nitlogo{
+    height: 70px;
+}
+
+article{
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#like{
+    height: 20px;
+    width: 20px;
+}
+
+#countsection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    height: 30px;
+}
+
+#heading{
+    margin-top: 1%;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#heading > h1,#money>h4{
+    text-decoration: underline;
+}
+
+#money > h2{
+    color: rgb(0, 190, 0);
+}
+
+
+@media screen and (max-width:980px) {
+    #heading{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+#money{
+    width: fit-content;
+    padding-left:50px;
+    padding-right:50px;
+    border-radius: 20px;
+    align-self: center;
+    box-shadow:0px 0px 10px 0px #40694a;
+    transition-duration: 1000ms;
+}
+
+#money:hover{
+    transform: scale(1.5),rotateX(60deg);
+}
+
+#comment{
+    margin-left: 5%;
+    border-bottom: 1px solid black;
+    transition-duration: 500ms;
+}
+
+#comment:hover{
+    transform: scale(1.025);
+}
+
+article > h3,article > p, article > div{
+    margin: 0;
+}
+
+
+
+#profile{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+#profile>h3{
+    width: fit-content;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#profile > ul{
+    position:relative;
+    background-color: #321b05d0;
+    list-style: none;
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+
+#profile > ul > li{
+    padding: 10px;
+}
+
+#profile > img{
+    border-radius: 100%;
+    height: 50px;
+    
+}
+
+#CommunityBody{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#CommunityBody  > #UpComing{
+    justify-content: center;
+    justify-items: center;
+    align-self: center;
+}
+
+@media screen and (max-width:980px){
+    #CommunityBody{
+        display: flex;
+        flex-direction:column ;
+    }
+    #profile{
+        margin: 5%;
+    }
+
+    #UpComing{
+        margin: 5%;
+    }
+}
+
+
+#clmn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+    align-self: center;
+}
+
+#clmn > div{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10%;
+    margin: 5% 10%;
+    cursor: pointer;
+}
